@@ -1,0 +1,23 @@
+{
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy --minify",
+    "build": "wrangler deploy --dry-run=true --outdir=dist",
+    "drizzle": "drizzle-kit generate:sqlite",
+    "migrate": "wrangler d1 migrations apply my-database --local"
+  },
+  "dependencies": {
+    "@hono/zod-validator": "^0.2.0",
+    "@lucia-auth/adapter-drizzle": "^1.0.4",
+    "bcryptjs": "^2.4.3",
+    "drizzle-orm": "^0.30.2",
+    "hono": "^4.1.0",
+    "lucia": "^3.1.1",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20240208.0",
+    "wrangler": "^3.32.0",
+    "drizzle-kit": "^0.20.14"
+  }
+}
