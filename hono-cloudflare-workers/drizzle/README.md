@@ -1,4 +1,4 @@
-Drizzle ORM & D1 environment is currently not working.  
+Drizzle ORM & D1 environment is currently ~~not~~ **working**.  
 [See issue](https://github.com/drizzle-team/drizzle-orm/issues/555)
 
 ## Development
