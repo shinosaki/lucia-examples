@@ -24,7 +24,14 @@ export const get = (c) => {
         <p>{query?.message ?? ""}</p>
       </form>
 
-      <a href="/signup">Create an account</a>
+      <ul>
+        <li>
+          <a href="/oauth/github">Sign in with Github</a>
+        </li>
+        <li>
+          <a href="/signup">Create an account</a>
+        </li>
+      </ul>
     </>
   )
 }

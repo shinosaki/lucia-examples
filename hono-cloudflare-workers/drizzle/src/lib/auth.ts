@@ -11,8 +11,11 @@ export const createLucia = (db, dev = false) => {
         secure: !dev
       }
     },
-    // getUserAttributes: (attributes) => {
-    //   return {}
-    // }
+    getUserAttributes: (attributes) => {
+      return {
+        githubId: attributes.github_id,
+        username: attributes.username,
+      }
+    }
   })
 }
