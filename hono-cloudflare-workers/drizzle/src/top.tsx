@@ -12,7 +12,8 @@ export const get = (c) => {
 
   return c.render(
     <>
-      <h1>Hi, {user.id}!</h1>
+      <h1>Hi, {user.username}!</h1>
+      <p>Your UserID: {user.id}</p>
       <form method="post" action="/signout">
         <button>Sign out</button>
       </form>
